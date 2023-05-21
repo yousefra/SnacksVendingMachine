@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import vendingmachine.CoinSlot;
-import vendingmachine.Keypad;
-import vendingmachine.NoteSlot;
 import vendingmachine.Snack;
 import vendingmachine.SnackMachine;
 import vendingmachine.SnackSlot;
@@ -17,7 +14,6 @@ public class SnackMachineTest {
         SnackMachine machine = new SnackMachine();
         machine.setupSnacks(getSnackSlotsData());
 
-        boolean snackSelected = false;
         Snack selectedSnack = null;
 
         while (true) {
@@ -73,80 +69,6 @@ public class SnackMachineTest {
                     break;
             }
         }
-
-        // System.out.println(machine.selectSnack(45));
-
-        // machine.insertCoin(1.0);
-        // machine.insertNote(2.0);
-        // machine.insertNote(20.0);
-        // machine.insertCard(15.5);
-
-        // Snack snack = machine.dispenseSnack();
-        // System.out.println(snack);
-        // double change = machine.dispenseChange();
-        // System.out.println(change);
-
-        // Snack snack1 = machine.dispenseSnack();
-        // System.out.println(snack1);
-        // Snack snack2 = machine.dispenseSnack();
-        // System.out.println(snack2);
-        // Snack snack3 = machine.dispenseSnack();
-        // System.out.println(snack3);
-        // Snack snack4 = machine.dispenseSnack();
-        // System.out.println(snack4);
-        // Snack snack5 = machine.dispenseSnack();
-        // System.out.println(snack5);
-
-        // Test selecting a snack
-        // assert machine.selectSnack(11) == null;
-
-        // Test inserting money
-        // assert machine.insertMoney(new CoinSlot(1.00));
-
-        // // Test dispensing a snack
-        // Snack snack = machine.dispenseSnack();
-        // assert snack != null;
-
-        // // Test dispensing change
-        // double change = machine.dispenseChange();
-        // assert change >= 0;
-
-        // // Setup Machine
-        // // new object
-        // // setup columns and rows
-
-        // // This use case begins when the customer wants to purchase snacks.
-        // // The customer selects a number by pressing on the keypad.
-        // String message = machine.select(1);
-
-        // // The VM displays a message that the snack is available for the selected
-        // number and displays its price.
-        // System.out.println(message);
-
-        // // The customer inserts the money.
-        // // The VM validates the money.
-        // // The VM accepts the money.
-        // // The VM displays the accumulated amount of money each time a new money is
-        // entered.
-        // float total = machine.insertMoney(new CoinSlot(10));
-        // System.out.println(total);
-
-        // total = machine.insertMoney(new CoinSlot(10));
-        // System.out.println(total);
-
-        // total = machine.insertMoney(new CoinSlot(10));
-        // System.out.println(total);
-
-        // // The VM monitors the amount of the accepted money, If the money is enough,
-        // the VM dispenses the selected snack to the customer.
-        // Snack snack = machine.dispenseSnack();
-
-        // // The VM determines if any change should be sent back to customer.
-        // double change = machine.dispenseChange();
-
-        // // The VM displays the change at panel.
-        // // Then, the VM dispenses change.
-
     }
 
     /**
